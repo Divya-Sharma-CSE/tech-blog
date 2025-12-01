@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: Divya’s Tech Notes
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Know more: lavaLamps.md
