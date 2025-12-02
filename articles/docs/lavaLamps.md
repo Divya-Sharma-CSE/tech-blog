@@ -4,16 +4,15 @@
 
 ⋆﹥━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━﹤⋆
 
-###### The flow is like this:
-1. h
-2. h
-3. h
 
-! [lava lamps](C:\Users\divya\OneDrive\Desktop\html\articles\articles\docs\images\Lava_lamp_wall_at_Cloudflare_office_-2.jpg "Wall of 100 lava lamps")
+![lava lamps](C:\Users\divya\OneDrive\Desktop\html\articles\articles\docs\images\Lava_lamp_wall_at_Cloudflare_office_-2.jpg "Wall of 100 lava lamps")
+<p>I was just trying to understand what Cloudflare was, going through their website when i found their article on Wall of Lava Lamps.
+<p> What do you mean they use these colourful glowing blobs, constantly moving and changing shapes to secure... the Internet? Not AI. And these are not just for display??
 
 ## What is Cloudflare?
+For everyone who, like me, didn't know about Cloudflare -<br>
  Cloudflare is an American company that ensures and improves the security and performance of websites, applications and network. <br>
- Cloudflare takes the internet traffic that’s meant for your website or app and routes it through its many data centers all over the world. They are then forwaded to your server.
+ Cloudflare takes the internet traffic that’s meant for your website or app and routes it through its many data centers all over the world before being forwarded to your server.
  
  *It's like rather than taking the direct, less travelled by and unsafe road, the audience coming to watch your performance take a safer route.*
 
@@ -34,24 +33,18 @@ Nah. This brings us to our second section- **Need for randomness in Cyptography*
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
-## Need for randomness in Cyptography
-For a secure encryption of 
-- HTTPS connections
-- TLS handshakes 
-- cookies
-- passswords 
-- VPN connections
-- etc.
-
-Randomness is needed to generate secure, unpredictable keys that protect all encrypted communication on the internet. a<br>
+## Need for randomness in Cryptography
+Now every time you open log into Gmail, log into Instagram or per say make an online payment, <br> your device and your server do a little "handshake" (that's the technical term)- a sort of agreement that whatever happens on this connection/session is secured by a key.<br><br>
+Now this key needs to be unpredictable. Random. For it needs to  protect all encrypted communication on the internet. <br>
 *Like a passcode to your mobile phone<br> the more random it is, the harder it is for a someone to guess and unlock your phone* 
 <br><br>on the internet it makes sure attackers can't
 - decrypt the data
 - spy on the traffic
 - hijack a session
 - impersonate
-<br> Since computers are dumb (*writer shrugs*) and follow a pre-prepared set of instructions to give a pre-determined result, they are incapable of giving real, random sequences to encrypt data on such large scale.<br>
-Hence they lack "chaos"
+<br>So there is a need for messy sequences to encrypt data on such a large scale.<br> 
+They need "chaos".<br>
+Now the deal is that computers don't do chaos. They follow neat and tidy instructions- opposite of the randomness Cryptography needs.
 <br>Which is when we turn to **nature** and **real-world**.
 
 
@@ -126,5 +119,15 @@ Entropy Pool = A big tank collecting water from many rivers.
 <br>You fill the tank from: lava lamp camera, thermal noise, mouse movements,etc. <br>
 
 ##### CSPRNG
-CSPNRG uses algorithms 
+CSPNRG uses algorithms to extend and create new, strong, unguessable streams of randomness (more than one, a huge supply, for being used for millions of connections) from the seed it received from previous stages and the entropy pool. It re-seeds from the entropy pool periodically to make predicting the key impossible.
 
+Congratulations! You have reached the end of the article with something new you learned today. This brings us to our last section.<br>
+
+## Philosophy Behind It and Conclusion
+Cloudflare embraces transparency and playful engineering. Shows us how sometimes the solution is right around us and that security need not be invisible. <br>
+Sometimes the best security starts with a little chaos. 
+
+## My final words
+Hello<br>
+I am Divya, a curious mind with the audacity to try my hands at things that look a little beyond my level. I get joy from digging deep into topics beyond my syllabus, understanding the why, that's how learning works for me. <br>
+This is my attempt at Technical Content Writing. Let's see how this goes.
